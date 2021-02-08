@@ -3,7 +3,7 @@ const mealContainer = document.querySelector('.meals');
 const searchBtn = document.querySelector('.search-btn');
 const errorMessage = document.querySelector('.error-message');
 
-// Search Btn Click Function
+// add Evenlisttener on search button
 searchBtn.addEventListener('click', function () {
     const mealSearch = document.querySelector('.meal-input').value;
     mealContainer.innerHTML = '';
@@ -47,7 +47,7 @@ const renderFoodInfo = (food) => {
     </ul>
 `;
 };
-// Foods Loop
+// mea
 function getFood(mealId) {
     const mainApi = `https://www.themealdb.com/api/json/v1/1/search.php?s=${mealId}`;
 
